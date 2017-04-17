@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+
+<script>
+function map(){
+	var type="Defaut"
+	return {
+		settype : function (str){type=String(str);} ,
+		gettype : function(){return type;}
+	}
+}
+var mymap=map();
+alert(mymap.gettype()); // 顯示 Defaut
+mymap.settype("沙漠");
+alert(mymap.gettype()); // 顯示 沙漠
+
+</script>
+
+
+</body>
+</html>
